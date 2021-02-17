@@ -1,0 +1,40 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<img class="background-img" src="{% static 'img/' %}{{ random_image }}" alt="background">
+<div class="content-body">
+    <div class="img-category">
+        <a href="{% url 'products:category' 1 %}"><img src="{% static 'img/marvel-thin.jpg' %}" alt="marvel" class="img-cat-marvel"></a>
+        <a href="{% url 'products:category' 2 %}"><img src="{% static 'img/dc-thin.jpg' %}" alt="marvel" class="img-cat-dc"></a>
+    </div>
+    <div class="tabs-list">
+        <div class="tabs-list-item">Новинки</div>
+        <div class="tabs-list-item">Лидеры продаж</div>
+        <div class="tabs-list-item">Скидки</div>
+    </div>
+    <div class="list-product">
+        {% for product in catalogs %}
+        <div class="product-item">
+            <div class="product-item-card">
+                <img src="{{ media_url }}{{ product.image }}" alt="img" class="product-item-img">
+                <div class="product-title">
+                    <a href="#" class="product-title-a">{{ product.name }}</a>
+                </div>
+                <div class="product-sale">
+                    <div class="product-btn block-product">
+                        <button type="submit" class="sale-btn">
+                            {% if user.is_authenticated %}
+                            <a href="{% url 'basket:add' product.pk %}">В корзину</a>
+                            {% else %}
+                            <a href="{% url 'auth:login' %}">В корзину</a>
+                            {% endif %}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

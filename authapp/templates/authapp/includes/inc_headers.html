@@ -1,0 +1,45 @@
+{% load static %}
+
+<div class="header-conteiner">
+    <div class="logo-menu">
+        <div class="logo-menu-center">
+            <div class="logo-div"> 
+                <a href="{% url 'main' %}" class="logo-magazine-link"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+            </div>
+            {% comment %}
+            <!-- <div class="menu-div">
+                <ul class="menu-ul">
+                    <li class="menu-li"><a href="{% url 'products:category' 0 %}" class="menu-a none-link">каталог</a></li>
+                    <li class="menu-li"><a href="{% url 'contact' %}" class="menu-a none-link">контакты</a></li>
+                    <li class="menu-li"><a href="{% url 'about' %}" class="menu-a none-link">о нас</a></li>
+                </ul>
+            </div>
+            <div class="contact-div">
+                <form class="form-search">
+                    <input type="text" class="search-text" placeholder="Поиск по каталогу..." >
+                    <button type="submit" class="search-btn"></button>
+                </form>
+            </div> -->
+            {% endcomment %}
+        </div>
+    </div>
+    <div class="catalog-search">
+        <div class="catalog-search-center">
+            <div class="category-div">
+                <nav class="nav">
+                    {% comment %}
+                    <!-- <ul class="category-menu">
+                        <li class="category-li"><a href="#">категории</a>
+                            <ul class="category-submenu">
+                                {% for link in links_menu %}
+                                <li><a href="#">{{ link.name }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    </ul> -->
+                    {% endcomment %}
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>

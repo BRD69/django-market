@@ -1,0 +1,213 @@
+[
+    {
+        "model": "mainapp.product",
+        "pk": 1,
+        "fields": {
+            "name": "Мстители. Том 1. #1",
+            "description": "", 
+            "category": 1,
+            "price": 99,
+            "image": "product_images/Avengers_001.jpg",
+            "file_product": "product_files/Avengers_001.cbr",            
+            "date_create": "2020-02-18 00:00:01"
+            
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 2,
+        "fields": {
+            "name": "Мстители. Том 1. #2",
+            "description": "", 
+            "category": 1,
+            "price": 99,
+            "image": "product_images/Avengers_002.jpg",
+            "file_product": "product_files/Avengers_002.cbr",            
+            "date_create": "2020-02-18 00:00:01"
+            
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 3,
+        "fields": {
+            "name": "Мстители. Том 1. #3",
+            "description": "", 
+            "category": 1,
+            "price": 99,
+            "image": "product_images/Avengers_003.jpg",
+            "file_product": "product_files/Avengers_003.cbr",            
+            "date_create": "2020-02-18 00:00:01"
+            
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 4,
+        "fields": {
+            "name": "Marvel vs DC #1",
+            "description": "", 
+            "category": 1,
+            "price": 99,
+            "image": "product_images/Marvel_vs_DC_001.png",
+            "file_product": "product_files/Marvel_vs_DC_001.cbr",            
+            "date_create": "2020-02-18 00:00:01"
+            
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 5,
+        "fields": {
+            "name": "Marvel vs DC #2",
+            "description": "", 
+            "category": 1,
+            "price": 99,
+            "image": "product_images/Marvel_vs_DC_002.png",
+            "file_product": "product_files/Marvel_vs_DC_002.cbr",            
+            "date_create": "2020-02-18 00:00:01"
+            
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 6,
+        "fields": {
+            "name": "Бесславный Железный Человек #1",
+            "description": "", 
+            "category": 1,
+            "price": 99,
+            "image": "product_images/Infamous_Iron_Man_001.jpg",
+            "file_product": "product_files/Infamous_Iron_Man_001.cbr",            
+            "date_create": "2020-02-18 00:00:01"
+            
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 7,
+        "fields": {
+            "name": "Бесславный Железный Человек #2",
+            "description": "", 
+            "category": 1,
+            "price": 99,
+            "image": "product_images/Infamous_Iron_Man_002.jpg",
+            "file_product": "product_files/Infamous_Iron_Man_002.cbr",            
+            "date_create": "2020-02-18 00:00:01"
+            
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 8,
+        "fields": {
+            "name": "Бесславный Железный Человек #3",
+            "description": "", 
+            "category": 1,
+            "price": 99,
+            "image": "product_images/Infamous_Iron_Man_003.jpg",
+            "file_product": "product_files/Infamous_Iron_Man_003.cbr",            
+            "date_create": "2020-02-18 00:00:01"
+            
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 9,
+        "fields": {
+            "name": "Стражи галактики. Том 5. #146",
+            "description": "", 
+            "category": 1,
+            "price": 99,
+            "image": "product_images/Guardians_of_the_Galaxy_146.jpg",
+            "file_product": "product_files/Guardians_of_the_Galaxy_146.cbr",          
+            "date_create": "2020-02-18 00:00:01"
+            
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 10,
+        "fields": {
+            "name": "Стражи галактики. Том 5. #147",
+            "description": "", 
+            "category": 1,
+            "price": 99,
+            "image": "product_images/Guardians_of_the_Galaxy_147.jpg",
+            "file_product": "product_files/Guardians_of_the_Galaxy_147.cbr",            
+            "date_create": "2020-02-18 00:00:01"
+            
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 11,
+        "fields": {
+            "name": "Стражи галактики. Том 5. #148",
+            "description": "", 
+            "category": 1,
+            "price": 99,
+            "image": "product_images/Guardians_of_the_Galaxy_148.jpg",
+            "file_product": "product_files/Guardians_of_the_Galaxy_148.cbr",            
+            "date_create": "2020-02-18 00:00:01"
+            
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 12,
+        "fields": {
+            "name": "Космическая одиссея #1",
+            "description": "", 
+            "category": 2,
+            "price": 99,
+            "image": "product_images/Cosmic_Odyssey_001.jpg",
+            "file_product": "product_files/Cosmic_Odyssey_001.cbr",            
+            "date_create": "2020-02-18 00:00:01"
+            
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 13,
+        "fields": {
+            "name": "Космическая одиссея #2",
+            "description": "", 
+            "category": 2,
+            "price": 99,
+            "image": "product_images/Cosmic_Odyssey_002.jpg",
+            "file_product": "product_files/Cosmic_Odyssey_002.cbr",            
+            "date_create": "2020-02-18 00:00:01"
+            
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 14,
+        "fields": {
+            "name": "Чудо женщина #1",
+            "description": "", 
+            "category": 2,
+            "price": 99,
+            "image": "product_images/Wonder_Woman_001.jpg",
+            "file_product": "product_files/028_-_Wonder_Woman_001.cbr",            
+            "date_create": "2020-02-18 00:00:01"
+            
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 15,
+        "fields": {
+            "name": "Чудо женщина #2",
+            "description": "", 
+            "category": 2,
+            "price": 99,
+            "image": "product_images/Wonder_Woman_002.jpg",
+            "file_product": "product_files/028_-_Wonder_Woman_002.cbr",            
+            "date_create": "2020-02-18 00:00:01"
+            
+        }
+    }
+]
+

@@ -1,0 +1,26 @@
+{% extends 'authapp/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="content-body">
+        <div class="form-login">
+            <form class="form-horizontal" action="{% url 'auth:login' %}" method="post">
+                {% csrf_token %}
+                <p style="letter-spacing: 2px;">Авторизация</p>
+                <input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username"
+                       maxlength="150" class="input-text" required="" id="id_username" placeholder="Логин">
+                <br>
+                <input type="password" name="password" autocomplete="current-password" class="input-text" required=""
+                       id="id_password" placeholder="Пароль">
+                <br>
+                <input class="form-control login-btn" type="submit" value="войти">
+            </form>
+            <a href="{% url 'auth:register' %}" class="register btn btn-round form-control">
+                зарегистрироваться
+            </a>
+            <a href="{% url 'social:begin' 'vk-oauth2' %}?next=/" class="btn btn-block btn-social btn-vk form-control">
+                Вход через ВКонтакте
+            </a>
+        </div>
+    </div>
+{% endblock content %}

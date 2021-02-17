@@ -1,0 +1,98 @@
+.content-body{
+    width: 1000px;
+    display: inline-block;
+}
+
+.text-aling{
+    font-family: "Montserrat";
+    margin: 2em 0;
+    padding-bottom:2em;
+    border-bottom: 1px solid #c0c0c0;
+}
+.text-content{
+    display: inline-block;
+    margin-bottom: 4em;
+}
+.text-content h2{
+    margin: 0px 0px 20px;
+}
+
+.img-category{
+    margin-top: 2em;
+}
+
+.tabs-list{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.tabs-list-item{
+    display: inline-block;
+    margin: 0px 20px 15px;
+    border-bottom: 1px dashed #000000;
+}
+
+.list-product{
+
+}
+
+.product-item{
+    display: inline-block;  
+    margin-bottom: 10px; 
+}
+.product-item-card{
+    margin: 3px 3px;
+}
+
+.product-item:hover{
+   background-color: #e2e2e2;
+   cursor: pointer;
+}
+
+.product-item-img{
+    width: 300px;
+    height: 455px;
+}
+
+.product-title{
+    /* position: absolute; */
+    height: 40px;
+    overflow:hidden;
+}
+
+.product-title-a{
+    font-size: 12px;
+    font-family: "Montserrat";
+    text-decoration: none;
+    color: #5a5a5a;
+}
+.product-title-p{
+    text-align: left;
+}
+.block-product{
+    display: inline-block;
+}
+
+.product-price{
+
+}
+
+.product-sale{
+    margin-bottom: 1em;
+}
+
+.body-footer{
+    height: 10em;
+}
+
+.sale-btn{
+    border: none;
+    padding: 5px 15px;
+    color: white;
+    background-color: red;
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+/* .sale-btn::before{
+    content: url(../img/basket.png);
+} */

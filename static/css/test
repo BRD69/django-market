@@ -1,0 +1,11 @@
+.Супергерои_Marvel___Официальная_коллекция___Том {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(1, 1, 1);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 896.177px;
+  top: 1648.838px;
+  z-index: 37;
+}

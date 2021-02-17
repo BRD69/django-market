@@ -1,0 +1,17 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="content-body">
+    <h1 class="text-aling">Где мы располагаемся</h1>
+    <div class="text-content">
+        <h2 style="text-align: left;"><strong>{{ location.city }}</strong></h2>
+        <p style="text-align: left; margin-bottom: 7px;">
+            <strong>Адрес: </strong>{{ location.city }}
+        </p>
+    <p style="text-align: left; margin-bottom: 7px;"><strong>График работы: </strong>{{ location.schedule }}</p>
+    <p style="text-align: left; margin-bottom: 7px;"><strong>Телефон: </strong>{{ location.phone }}</p>
+    <p style="text-align: left;"><strong><img src="{% static 'img/maps.png' %}" width="730" height="538"></strong></p>
+</div>
+</div>    
+{% endblock content %} 

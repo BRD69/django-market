@@ -1,0 +1,72 @@
+{% load static %}
+
+<div class="header-conteiner">
+    <div class="logo-menu">
+        <div class="logo-menu-center">
+            <div class="logo-div">
+                <a href="{% url 'main' %}" class="logo-magazine-link"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+            </div>
+            <div class="menu-div">
+                <ul class="menu-ul">
+                    <li class="menu-li"><a href="{% url 'products:category' 0 %}" class="menu-a none-link">каталог</a>
+                    </li>
+                    <li class="menu-li"><a href="{% url 'contact' %}" class="menu-a none-link">контакты</a></li>
+                    <li class="menu-li"><a href="{% url 'about' %}" class="menu-a none-link">о нас</a></li>
+                </ul>
+            </div>
+            <div class="contact-div">
+                <form class="form-search">
+                    <input type="text" class="search-text" placeholder="Поиск по каталогу...">
+                    <button type="submit" class="search-btn"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="catalog-search">
+        <div class="catalog-search-center">
+            <div class="category-div">
+                <nav class="nav">
+                    <ul class="category-menu">
+                        <li class="category-li"><a href="#">категории</a>
+                            <ul class="category-submenu">
+                                {% for link in links_menu %}
+                                    <li><a href="{% url 'products:category' link.pk %}">{{ link.name }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="basket-office-div">
+                {% if user.is_authenticated %}
+                    <nav class="nav">
+                        <ul class="category-menu">
+                            <li class="category-li"><a href="#" class="name-user">{{ user.first_name|default:'Пользователь' }}</a>
+                                <ul class="category-submenu">
+                                    {% if user.is_superuser %}
+                                    <li><a href="{% url 'myadmin:admin_main' %}">админка</a></li>
+                                    {% endif %}
+                                    <li><a href="{% url 'auth:edit' %}">профиль</a></li>
+                                    <li><a href="{% url 'ordersapp:index' %}">заказы</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                {% endif %}
+                <ul class="menu-user">
+                    <li><a href="{% url 'basket:index' %}" class="basket-a"><img src="{% static 'img/basket.png' %}" alt="basket"
+                                                          class="basket-img"><span
+                            style="color: rgb(255, 255, 255); font-size: 10px;">{% if basket %}
+                        {{ basket|length }}{% endif %}</span></a></li>
+                    {% if user.is_authenticated %}
+                        <li><a href="{% url 'auth:logout' %}" class="user-office-a"><img
+                                src="{% static 'img/exit.png' %}" alt="exit" class="user-office-img"></a></li>
+                    {% else %}
+                        <li><a href="{% url 'auth:login' %}" class="user-office-a"><img
+                                src="{% static 'img/user.png' %}" alt="user" class="user-office-img"></a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

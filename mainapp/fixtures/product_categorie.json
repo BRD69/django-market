@@ -1,0 +1,20 @@
+[
+    {
+        "model": "mainapp.productcategory",
+        "pk": 1,
+        "fields": {
+            "name": "Marvel",
+            "description": "Marvel",
+            "date_create": "2020-02-18 00:00:01"
+        }
+    },
+    {
+        "model": "mainapp.productcategory",
+        "pk": 2,
+        "fields": {
+            "name": "DC",
+            "description": "DC",
+            "date_create": "2020-02-18 00:00:01"
+        }
+    }
+]

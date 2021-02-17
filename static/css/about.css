@@ -1,0 +1,16 @@
+.content-body{
+    width: 1000px;
+    display: inline-block;
+}  
+
+.text-aling{
+    font-family: "Montserrat";
+    margin: 2em 0;
+    padding-bottom:2em;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.text-content{
+    display: inline-block;
+    margin-bottom: 4em;
+}

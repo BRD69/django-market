@@ -1,0 +1,30 @@
+{% extends 'authapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="content-body">
+    <div class="form-login">
+        <form class="form-horizontal" action="{% url 'auth:register' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <p style="letter-spacing: 2px;">Регистрация</p>
+            <p><input type="text" name="username" maxlength="150" autofocus="" class="input-text" required="" id="id_username" placeholder="Логин"></p>
+            <p><input type="text" name="first_name" maxlength="30" class="input-text" id="id_first_name" placeholder="Имя"></p>
+            <p><input type="password" name="password1" autocomplete="new-password" class="input-text" required="" id="id_password1" placeholder="Пароль"></p>
+            <p><input type="password" name="password2" autocomplete="new-password" class="input-text" required="" id="id_password2" placeholder="Повторите пароль"></p>
+            <p><input type="email" name="email" maxlength="254" class="input-text" id="id_email" placeholder="E-mail"></p>
+            <p><input type="number" name="age" min="0" class="input-text" required="" id="id_age" placeholder="Возраст"></p>
+            <div class="example-2">
+                <div class="form-group">
+                    <label for="file" class="btn btn-tertiary js-labelFile">
+                        <input type="file" name="avatar" id="id_avatar" accept="image/*" class="input-file">
+                        <i class="icon fa fa-upload"></i>
+                        <span class="js-fileName">Загрузить фото</span>
+                    </label>
+                </div>
+            </div>
+            <br>
+            <input class="form-control login-btn" type="submit" value="зарегистрироваться">
+        </form>
+    </div>
+</div>
+{% endblock %}

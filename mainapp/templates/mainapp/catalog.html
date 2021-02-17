@@ -1,0 +1,30 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="content-body">
+    <div class="list-product">
+        {% for product in catalogs %}
+        <div class="product-item">
+            <div class="product-item-card">
+                <img src="{{ media_url }}{{ product.image }}" alt="img" class="product-item-img">
+                <div class="product-title">
+                    <a href="#" class="product-title-a">{{ product.name }}</a>
+                </div>
+                <div class="product-sale">
+                    <div class="product-btn block-product">
+                        <button type="submit" class="sale-btn">
+                            {% if user.is_authenticated %}
+                                <a href="{% url 'basket:add' product.pk %}">В корзину</a>
+                            {% else %}
+                                <a href="{% url 'auth:login' %}">В корзину</a>
+                            {% endif %}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
